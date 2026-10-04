@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", chatRoutes);
 
 app.get("/test", async (req, res) => {
-  res.json({ msg: "test was successful" });
+  res.json({ msg: "test was successful yyyyyy" });
 });
 
 app.listen(PORT, () => {
