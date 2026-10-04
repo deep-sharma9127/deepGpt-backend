@@ -14,6 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", chatRoutes);
 
+app.get("/test", async (req, res) => {
+  res.json({ msg: "test was successful" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
   connectDB();
